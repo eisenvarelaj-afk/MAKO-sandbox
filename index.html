@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAKO — Cinematic Prompt Library</title>
+<meta name="description" content="Video-first website templates and copy-paste prompts, plus a field guide to sharks.">
+<meta name="theme-color" content="#040E1E">
+<link rel="canonical" href="https://eisenvarelaj-afk.github.io/MAKO/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MAKO">
+<meta property="og:title" content="MAKO — Cinematic Prompt Library">
+<meta property="og:description" content="Video-first website templates and copy-paste prompts, plus a field guide to sharks.">
+<meta property="og:url" content="https://eisenvarelaj-afk.github.io/MAKO/">
+<!-- Cuando exista assets/img/og.jpg (1200x630): <meta property="og:image" content="https://eisenvarelaj-afk.github.io/MAKO/assets/img/og.jpg"> -->
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+<a class="skip" href="#main-content" data-i18n="skip">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="#hero" aria-label="MAKO">
+    <svg viewBox="0 0 28 28" width="28" height="28" aria-hidden="true"><path d="M14 2L22 24H6L14 2Z" fill="#EDEAE3"/><path d="M14 8L19 22H9L14 8Z" fill="#F0524A"/></svg>
+    <span>MAKO</span>
+  </a>
+  <nav id="nav" class="nav-links" data-i18n-attr="aria-label:nav.label">
+    <a href="#prompts" data-i18n="nav.prompts"></a><a href="#species" data-i18n="nav.species"></a><a href="#dive-log" data-i18n="nav.divelog"></a><a href="#access" data-i18n="nav.access"></a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang" role="group" data-i18n-attr="aria-label:nav.lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button></div>
+    <a href="#access" class="pill-btn nav-cta" data-open="access" data-i18n="nav.cta"></a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" data-i18n-attr="aria-label:nav.menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main id="main-content" tabindex="-1">
+<section class="hero" id="hero">
+  <video id="hero-video" data-src="https://thinkingods.com/demos/mako-hero/hero.mp4" muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"></video>
+  <div class="hero-word" aria-hidden="true">MAKO</div><div class="hero-shade-l"></div><div class="hero-shade-b"></div>
+  <div class="depth-gauge" id="depth-gauge" aria-hidden="true"><span class="depth-label">DEPTH</span><div class="depth-track"><div class="depth-ticks"></div><div class="depth-marker" id="depth-marker"></div></div><span class="depth-readout" id="depth-readout">000m</span></div>
+  <div class="hero-content">
+    <p class="eyebrow rv" style="--d:2"><i></i><span data-i18n="hero.eyebrow"></span></p>
+    <h1 class="hero-title rv" style="--d:3" data-i18n-html="hero.title">Websites <span>that bite.</span></h1>
+    <p class="hero-lede rv" style="--d:4" data-i18n="hero.lede"></p>
+    <div class="hero-actions rv" style="--d:5"><a href="#prompts" class="pill-btn coral"><span data-i18n="hero.cta"></span><span class="arrow" aria-hidden="true">→</span></a><a href="#dive-log" class="watch-link" data-i18n="hero.watch"></a></div>
+  </div>
+  <div class="dock">
+    <div class="dock-cell rv" style="--d:6"><div class="dock-thumb"><img src="https://thinkingods.com/demos/mako-hero/thumb-eye.jpg" width="64" height="64" loading="lazy" alt="" aria-hidden="true"></div><div><div class="dock-key"><i></i><span data-i18n="dock.k1"></span></div><div class="dock-val" data-i18n="dock.v1"></div></div></div>
+    <div class="dock-cell rv" style="--d:7"><div class="dock-thumb"><img src="https://thinkingods.com/demos/mako-hero/thumb-jaw.jpg" width="64" height="64" loading="lazy" alt="" aria-hidden="true"></div><div><div class="dock-key"><i class="bone"></i><span data-i18n="dock.k2"></span></div><div class="dock-val" data-i18n="dock.v2"></div></div></div>
+    <div class="dock-cell rv" style="--d:8"><div class="dock-thumb"><img src="https://thinkingods.com/demos/mako-hero/thumb-tail.jpg" width="64" height="64" loading="lazy" alt="" aria-hidden="true"></div><div><div class="dock-key"><i class="coral"></i><span data-i18n="dock.k3"></span></div><div class="dock-val" data-i18n="dock.v3"></div></div></div>
+    <div class="dock-cell dock-species rv" style="--d:9"><div class="dock-key" data-i18n="dock.sp"></div><div class="dock-name">Isurus oxyrinchus</div><button class="replay" id="replay-btn" type="button" data-i18n="hero.replay"></button></div>
+  </div>
+</section>
+<section class="section prompts" id="prompts" aria-labelledby="prompts-title"><div class="wrap">
+  <div class="sec-head fade-up"><div><p class="kicker"><b>01</b><span data-i18n="pr.kicker"></span></p><h2 class="sec-title" id="prompts-title" data-i18n-html="pr.title"></h2></div><p class="sec-copy" data-i18n="pr.intro"></p></div>
+  <div class="tools fade-up"><input class="field" id="prompt-search" type="search" data-i18n-attr="placeholder:pr.search;aria-label:pr.search"><select class="field" id="prompt-filter" data-i18n-attr="aria-label:pr.filter"><option value="all" data-i18n="cat.all"></option><option value="landing" data-i18n="cat.landing"></option><option value="motion" data-i18n="cat.motion"></option><option value="commerce" data-i18n="cat.commerce"></option><option value="conversion" data-i18n="cat.conversion"></option><option value="accessibility" data-i18n="cat.accessibility"></option></select><span class="count" id="prompt-total" aria-live="polite"></span></div>
+  <div class="grid" id="prompt-grid"></div><p class="note" data-i18n="pr.note"></p>
+</div></section>
+<section class="section species" id="species" aria-labelledby="species-title"><div class="wrap">
+  <div class="sec-head fade-up"><div><p class="kicker"><b>02</b><span data-i18n="sp.kicker"></span></p><h2 class="sec-title" id="species-title" data-i18n-html="sp.title"></h2></div><p class="sec-copy" data-i18n="sp.intro"></p></div>
+  <div class="tools fade-up"><input class="field" id="shark-search" type="search" data-i18n-attr="placeholder:sp.search;aria-label:sp.search"><select class="field" id="shark-filter" data-i18n-attr="aria-label:sp.filter"><option value="all" data-i18n="hab.all"></option><option value="open-ocean" data-i18n="hab.open-ocean"></option><option value="coastal" data-i18n="hab.coastal"></option><option value="deep-sea" data-i18n="hab.deep-sea"></option><option value="reef" data-i18n="hab.reef"></option></select><span class="count" id="shark-count" aria-live="polite"></span></div>
+  <div class="grid" id="shark-grid"></div>
+</div></section>
+<section class="section dive" id="dive-log" aria-labelledby="dive-title"><div class="wrap">
+  <div class="sec-head fade-up"><div><p class="kicker"><b>03</b><span data-i18n="dv.kicker"></span></p><h2 class="sec-title" id="dive-title" data-i18n-html="dv.title"></h2></div><p class="sec-copy" data-i18n="dv.intro"></p></div>
+  <div class="bento">
+    <article class="bento-card tall fade-up"><p class="idx" data-i18n="dv.l1.k"></p><h3 data-i18n="dv.l1.h"></h3><p data-i18n="dv.l1.p"></p><div class="scale-panel" aria-hidden="true"><span class="scale-tag" data-i18n="dv.flow"></span><div class="scale-track"><i>01 // VORTEX</i><i>02 // LAMINAR</i><i>03 // LESS DRAG</i><i>04 // FLOW</i><i>01 // VORTEX</i><i>02 // LAMINAR</i><i>03 // LESS DRAG</i><i>04 // FLOW</i></div></div><p class="lesson" data-i18n="dv.l1.l"></p></article>
+    <article class="bento-card fade-up"><p class="idx" data-i18n="dv.l2.k"></p><h3 data-i18n="dv.l2.h"></h3><p data-i18n="dv.l2.p"></p><p class="lesson" data-i18n="dv.l2.l"></p></article>
+    <article class="bento-card fade-up"><p class="idx" data-i18n="dv.l3.k"></p><h3 data-i18n="dv.l3.h"></h3><p data-i18n="dv.l3.p"></p><div class="teeth" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p class="lesson" data-i18n="dv.l3.l"></p></article>
+    <article class="bento-card wide fade-up"><p class="idx" data-i18n="dv.l4.k"></p><h3 data-i18n="dv.l4.h"></h3><p data-i18n="dv.l4.p"></p><div class="rings" aria-hidden="true"><b></b><u></u><u></u><u></u></div><p class="lesson" data-i18n="dv.l4.l"></p></article>
+  </div>
+  <div class="stats fade-up" id="stats-band"><div class="stat"><span class="stat-label" data-i18n="st.len"></span><div class="stat-val" data-i18n="st.len.v"></div><div class="bar"><div class="fill" id="stat-fill-1"></div></div></div><div class="stat"><span class="stat-label" data-i18n="st.heat"></span><div class="stat-val" data-i18n="st.heat.v"></div><div class="bar"><div class="fill grad"></div><div class="marker" id="stat-marker-2"></div></div></div><div class="stat"><span class="stat-label" data-i18n="st.teeth"></span><div class="stat-val" data-i18n="st.teeth.v"></div><div class="tris" aria-hidden="true"><i class="stat-tri"></i><i class="stat-tri"></i><i class="stat-tri"></i><i class="stat-tri"></i><i class="stat-tri"></i><i class="stat-tri"></i></div></div><div class="stat"><span class="stat-label" data-i18n="st.strike"></span><div class="stat-val coral" data-i18n="st.strike.v"></div><span class="stat-sub" data-i18n="st.strike.s"></span></div></div>
+  <div class="cta-banner fade-up"><h2 class="serif" data-i18n-html="dv.cta"></h2><a href="#prompts" class="pill-btn coral big"><span data-i18n="dv.cta.btn"></span><span class="arrow" aria-hidden="true">→</span></a></div>
+</div></section>
+<section class="section access" id="access" aria-labelledby="access-title"><div class="wrap two"><div><p class="kicker"><b>04</b><span data-i18n="ac.kicker"></span></p><h2 class="sec-title" id="access-title" data-i18n-html="ac.title"></h2></div><div><p class="sec-copy" data-i18n="ac.text"></p><a href="#prompts" class="pill-btn coral" data-i18n="ac.btn"></a></div></div></section>
+</main>
+<footer class="site-footer"><span data-i18n="ft.l"></span><span data-i18n="ft.r"></span></footer>
+<dialog id="access-dialog" aria-labelledby="access-h"><button class="x" type="button" data-close data-i18n-attr="aria-label:dlg.close">×</button><p class="kicker" data-i18n="ad.k"></p><h2 id="access-h" data-i18n="ad.h"></h2><p data-i18n="ad.p1"></p><p data-i18n="ad.p2"></p><a href="#prompts" class="pill-btn coral" data-close data-i18n="ad.btn"></a></dialog>
+<dialog id="note-dialog" aria-labelledby="note-h"><button class="x" type="button" data-close data-i18n-attr="aria-label:dlg.close">×</button><p class="sci" id="note-sci"></p><h2 id="note-h"></h2><p class="tag" id="note-tag"></p><p id="note-fact"></p><p class="small" data-i18n="sp.soon"></p></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:16px;text-align:center">MAKO needs JavaScript. / MAKO necesita JavaScript.</p></noscript>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
