@@ -1,0 +1,8 @@
+[
+  {"id":"landing","n":1,"cat":"landing","min":1},
+  {"id":"video","n":2,"cat":"motion","min":1},
+  {"id":"store","n":3,"cat":"commerce","min":2},
+  {"id":"audit","n":4,"cat":"conversion","min":1},
+  {"id":"system","n":5,"cat":"landing","min":2},
+  {"id":"a11y","n":6,"cat":"accessibility","min":1}
+]
