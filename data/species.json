@@ -1,5 +1,5 @@
 [
-  {"id":"mako","sci":"Isurus oxyrinchus","habitat":"open-ocean","img":"assets/media/thumb-jaw.jpg"},
+  {"id":"mako","sci":"Isurus oxyrinchus","habitat":"open-ocean","img":"assets/media/thumb-jaw.svg"},
   {"id":"white","sci":"Carcharodon carcharias","habitat":"coastal","img":"https://upload.wikimedia.org/wikipedia/commons/5/56/White_shark.jpg"},
   {"id":"whale","sci":"Rhincodon typus","habitat":"open-ocean","img":"https://upload.wikimedia.org/wikipedia/commons/f/fe/Whale_shark_Georgia_aquarium.jpg"},
   {"id":"hammer","sci":"Sphyrna lewini","habitat":"coastal","img":"https://upload.wikimedia.org/wikipedia/commons/e/ec/Scalloped_hammerhead_shark_off_Kaneohe_Bay.jpg"},
