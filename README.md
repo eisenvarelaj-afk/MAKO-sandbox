@@ -6,7 +6,7 @@ Entorno aislado para validar la reimplementación modular de MAKO. Este reposito
 
 - [x] Repositorio sandbox confirmado (público y vacío al iniciar).
 - [x] Paquete revisado y validado localmente en el entorno de trabajo.
-- [ ] Incorporar todos los archivos de la aplicación a este repositorio.
+- [x] Incorporar HTML, CSS, JavaScript, datos, traducciones y archivos auxiliares a `sandbox/entrega1`.
 - [ ] Comparar visual y funcionalmente con la versión original.
 - [ ] Migrar y verificar los recursos multimedia externos.
 - [ ] Activar GitHub Pages después de incorporar el sitio y revisar las rutas.
