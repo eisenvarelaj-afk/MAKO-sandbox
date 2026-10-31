@@ -1,0 +1,25 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--nav-h);background:var(--deep);color:var(--bone);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+body{overflow-x:hidden;line-height:1.5}
+body:has(dialog[open]){overflow:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:4px}
+.skip{position:fixed;left:12px;top:-60px;z-index:300;background:var(--bone);color:var(--deep);padding:10px 16px;border-radius:99px;font:12px var(--mono);text-decoration:none;transition:top .2s}
+.skip:focus{top:12px}
+.serif{font-family:var(--serif)}
+.kicker{font:11px var(--mono);letter-spacing:.16em;color:var(--ink-3);display:flex;gap:10px;margin-bottom:14px}
+.kicker b{color:var(--red-2);font-weight:400}
+.pill-btn{display:inline-flex;align-items:center;gap:8px;background:var(--bone);color:var(--bg);font:500 11px var(--mono);letter-spacing:.14em;padding:11px 22px;border-radius:100px;text-decoration:none;border:0;cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s}
+.pill-btn:hover{transform:translateY(-2px)}
+.pill-btn.coral{background:linear-gradient(135deg,var(--red),var(--red-2));color:#fff;box-shadow:0 0 24px rgba(240,82,74,.35)}
+.pill-btn.coral:hover{box-shadow:0 0 36px rgba(240,82,74,.6)}
+.pill-btn.big{padding:16px 36px;font-size:13px}
+.arrow{width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,.2);display:inline-flex;align-items:center;justify-content:center;transition:transform .3s}
+.coral:hover .arrow{transform:translateX(3px)}
+.js .fade-up{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .fade-up.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *,::before,::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .js .fade-up,.js .rv,.hero-word{opacity:1!important;transform:none!important;filter:none!important}
+}
