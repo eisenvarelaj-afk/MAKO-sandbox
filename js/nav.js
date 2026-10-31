@@ -8,12 +8,15 @@ export function initNav() {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && nav.classList.contains('open')) { set(false); burger.focus(); }
   });
-  matchMedia('(min-width:981px)').addEventListener('change', () => set(false));
+  const desktop = matchMedia('(min-width:981px)');
+  if (desktop.addEventListener) desktop.addEventListener('change', () => set(false));
+  else desktop.addListener(() => set(false));
   const onScroll = () => header.classList.toggle('scrolled', scrollY > 40);
   addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  const links = $$('a', nav);
+  const links = $('a', nav);
+  if (!('IntersectionObserver' in window)) return;
   const io = new IntersectionObserver(entries => entries.forEach(e => {
     if (!e.isIntersecting) return;
     links.forEach(a => a.hash === '#' + e.target.id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'));
