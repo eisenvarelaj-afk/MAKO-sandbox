@@ -12,6 +12,10 @@ export function toast(msg) {
 }
 
 export function initReveal() {
+  if (!('IntersectionObserver' in window)) {
+    $('.fade-up').forEach(el => el.classList.add('in'));
+    return;
+  }
   const io = new IntersectionObserver((entries, obs) => entries.forEach(e => {
     if (!e.isIntersecting) return;
     e.target.classList.add('in');
