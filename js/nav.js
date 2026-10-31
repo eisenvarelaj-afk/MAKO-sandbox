@@ -15,7 +15,7 @@ export function initNav() {
   addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  const links = $('a', nav);
+  const links = $$('a', nav);
   if (!('IntersectionObserver' in window)) return;
   const io = new IntersectionObserver(entries => entries.forEach(e => {
     if (!e.isIntersecting) return;
