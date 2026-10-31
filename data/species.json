@@ -1,0 +1,10 @@
+[
+  {"id":"mako","sci":"Isurus oxyrinchus","habitat":"open-ocean","img":"https://thinkingods.com/demos/mako-hero/thumb-jaw.jpg"},
+  {"id":"white","sci":"Carcharodon carcharias","habitat":"coastal","img":"https://upload.wikimedia.org/wikipedia/commons/5/56/White_shark.jpg"},
+  {"id":"whale","sci":"Rhincodon typus","habitat":"open-ocean","img":"https://upload.wikimedia.org/wikipedia/commons/f/fe/Whale_shark_Georgia_aquarium.jpg"},
+  {"id":"hammer","sci":"Sphyrna lewini","habitat":"coastal","img":"https://upload.wikimedia.org/wikipedia/commons/e/ec/Scalloped_hammerhead_shark_off_Kaneohe_Bay.jpg"},
+  {"id":"tiger","sci":"Galeocerdo cuvier","habitat":"coastal","img":"https://upload.wikimedia.org/wikipedia/commons/3/3a/Tiger_shark_at_Tiger_Beach_Bahamas.jpg"},
+  {"id":"bull","sci":"Carcharhinus leucas","habitat":"coastal","img":"https://upload.wikimedia.org/wikipedia/commons/7/7b/Bull_shark_in_shallow_water.jpg"},
+  {"id":"nurse","sci":"Ginglymostoma cirratum","habitat":"reef","img":"https://upload.wikimedia.org/wikipedia/commons/6/67/Ginglymostoma_cirratum_Bahamas_4.jpg"},
+  {"id":"greenland","sci":"Somniosus microcephalus","habitat":"deep-sea","img":"https://upload.wikimedia.org/wikipedia/commons/d/df/Somniosus_microcephalus.jpg"}
+]
