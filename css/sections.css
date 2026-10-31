@@ -1,0 +1,52 @@
+.section{padding:110px var(--pad);border-top:1px solid var(--line);position:relative}
+.wrap{max-width:1320px;margin:0 auto}
+.prompts{background:linear-gradient(180deg,var(--deep),#081b31 55%,var(--deep))}
+.species{background:#06142A}
+.dive{background:linear-gradient(180deg,#06142A,var(--deep) 50%,#06142A)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:32px}
+.sec-title{font:400 clamp(42px,5.6vw,80px)/.96 var(--serif);letter-spacing:-.02em}
+.sec-title em,.sec-title i{color:var(--cyan)}
+.sec-copy{max-width:430px;color:var(--ink-2);font-size:15px;line-height:1.7}
+@media(max-width:900px){.section{padding:80px var(--pad)}.sec-head{flex-direction:column;align-items:flex-start;gap:20px}}
+/* Dive log */
+.bento{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:16px}
+.bento-card{background:rgba(10,28,52,.45);border:1px solid var(--line);border-radius:26px;padding:36px;display:flex;flex-direction:column;gap:16px;position:relative;overflow:hidden;backdrop-filter:blur(12px);transition:border-color .4s}
+.bento-card:hover{border-color:rgba(95,212,232,.35)}
+.bento-card.tall{grid-row:span 2}.bento-card.wide{grid-column:span 2}
+.bento-card h3{font:400 36px/1 var(--serif)}
+.bento-card p{font-size:14px;line-height:1.65;color:var(--ink-2)}
+.bento-card .idx{font:10px var(--mono);letter-spacing:.18em;color:var(--ink-3)}
+.bento-card .lesson{font:11px var(--mono);letter-spacing:.1em;color:var(--cyan);margin-top:auto;padding-top:16px}
+.scale-panel{height:150px;background:var(--deep);border-radius:16px;border:1px solid var(--line);position:relative;overflow:hidden;display:flex;align-items:center}
+.scale-tag{position:absolute;bottom:12px;left:16px;font:9px var(--mono);letter-spacing:.14em;color:var(--cyan);z-index:2}
+.scale-track{display:flex;gap:12px;white-space:nowrap;animation:drift 9s linear infinite;padding:0 16px;opacity:.7}
+.scale-track i{font:normal 9px var(--mono);letter-spacing:.1em;color:var(--ink-3);border-left:1px solid var(--line);padding-left:8px;height:40px;display:flex;align-items:flex-end}
+@keyframes drift{to{transform:translateX(-50%)}}
+.teeth{display:flex;gap:8px}
+.teeth i{width:18px;height:24px;background:var(--bone);clip-path:polygon(50% 0,0 100%,100% 100%);opacity:.8}
+.rings{position:absolute;right:48px;bottom:48px;width:100px;height:100px;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.rings b{width:10px;height:10px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red);z-index:1}
+.rings u{position:absolute;border:1px solid rgba(240,82,74,.4);border-radius:50%;animation:ring 3s linear infinite}
+.rings u:nth-of-type(2){animation-delay:1s}.rings u:nth-of-type(3){animation-delay:2s}
+@keyframes ring{from{width:10px;height:10px;opacity:1}to{width:90px;height:90px;opacity:0}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:26px;margin-top:16px;overflow:hidden}
+.stat{background:#07162b;padding:32px;display:flex;flex-direction:column;gap:12px}
+.stat-label{font:10px var(--mono);letter-spacing:.18em;color:var(--ink-3)}
+.stat-val{font:400 32px var(--serif)}.stat-val.coral{color:var(--red-2);font-style:italic}
+.stat-sub{font:10px var(--mono);color:var(--ink-2)}
+.bar{height:6px;background:rgba(237,234,227,.1);border-radius:3px;position:relative}
+.fill{position:absolute;inset:0 auto 0 0;width:0;background:var(--cyan);border-radius:3px;transition:width 1.5s var(--ease)}
+.fill.grad{width:100%;background:linear-gradient(90deg,#102745,var(--cyan),var(--red))}
+.marker{position:absolute;top:-3px;left:0;width:2px;height:12px;background:var(--bone);box-shadow:0 0 6px var(--bone);transition:left 1.5s var(--ease)}
+.tris{display:flex;gap:6px}
+.stat-tri{width:10px;height:14px;background:var(--bone);clip-path:polygon(50% 0,0 100%,100% 100%);opacity:.2;transition:opacity .5s}
+.stat-tri.active{opacity:1}
+.cta-banner{margin-top:80px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:24px}
+.cta-banner h2{font-size:clamp(36px,4.5vw,64px);font-weight:400;line-height:1.05}
+.cta-banner h2 span{color:var(--red-2);font-style:italic}
+.access{padding-top:70px;padding-bottom:70px;background:var(--deep)}
+.wrap.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px;align-items:center}
+.access .pill-btn{margin-top:22px}
+.site-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:28px var(--pad);border-top:1px solid var(--line);font:10px var(--mono);letter-spacing:.1em;color:var(--ink-3);background:var(--deep)}
+@media(max-width:980px){.bento{grid-template-columns:1fr}.bento-card.tall,.bento-card.wide{grid-row:auto;grid-column:auto}.stats{grid-template-columns:repeat(2,1fr)}.rings{display:none}}
+@media(max-width:520px){.stats{grid-template-columns:1fr}.bento-card{padding:28px}}
