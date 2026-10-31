@@ -1,6 +1,6 @@
 export const $ = (s, r = document) => r.querySelector(s);
 export const $$ = (s, r = document) => [...r.querySelectorAll(s)];
-export const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+export const esc = s => String(s).replace(/[&<>\"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '\"': '&quot;' }[c]));
 
 let timer;
 export function toast(msg) {
@@ -13,7 +13,7 @@ export function toast(msg) {
 
 export function initReveal() {
   if (!('IntersectionObserver' in window)) {
-    $('.fade-up').forEach(el => el.classList.add('in'));
+    $$('.fade-up').forEach(el => el.classList.add('in'));
     return;
   }
   const io = new IntersectionObserver((entries, obs) => entries.forEach(e => {
